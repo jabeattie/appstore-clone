@@ -11,7 +11,7 @@ import CoreMotion
 
 internal class BaseRoundedCardCell: UICollectionViewCell {
     
-    internal static let cellHeight: CGFloat = 470.0
+    internal static let cellHeight: CGFloat = 270.0
     
     private static let kInnerMargin: CGFloat = 20.0
     

@@ -33,7 +33,7 @@ internal class PresentStoryViewAnimationController: NSObject, UIViewControllerAn
         
         // 3
         let duration = transitionDuration(using: transitionContext)
-        UIView.animate(withDuration: duration, animations: { 
+        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: -0.5, options: [], animations: {
             toViewController.positionContainer(left: 0.0,
                                                right: 0.0,
                                                top: 0.0,
@@ -48,7 +48,7 @@ internal class PresentStoryViewAnimationController: NSObject, UIViewControllerAn
     }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.1
+        return 1.0
     }
     
 }
